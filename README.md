@@ -41,8 +41,7 @@ Contents:
 You need Kivy, Buildozer, and JDK 8.
 
 - Install OS dependencies first
-- For Arch Linux these are:
-    - `sudo pacman -Syu sdl2 sdl2_image sdl2_mixer sdl2_ttf`
+    - For Arch Linux these are: `sudo pacman -Syu sdl2 sdl2_image sdl2_mixer sdl2_ttf`
 
 - Then Python dependencies; rebuilds Kivy because of audio bug in Pip binary
     - `pip install -r requirements.txt`
@@ -69,12 +68,15 @@ I point anyone interested to an alternate implementation of JDK 8, which got me 
 To deploy on Android, you need `adb` and other tools in the Android SDK.
 
 When opening a new console, before doing any Buildozer commands, you need AdoptOpenJDK in the path:
+
     export PATH=$PWD/jdk8u242-b08/bin:$PATH
 
-After changing buildozer.spec, you might need to run:
+After changing `buildozer.spec`, you might need to run:
+
     buildozer appclean
 
-To deploy and run on a device:
+Finally, to deploy and run on a device:
+
     adb devices     # check that device is visible
     buildozer android debug deploy run
 
