@@ -133,12 +133,12 @@ Features:
         3. fireworks
     - text:
         - funny messages:
-        - >=100: "You are a traffic god!", "This humble game bows before you.", "You have achieved mastery.", "You have learnt everything this game can teach you."
-        - >=50: "Well played!", "You had a good run. Can you do it again?", "You played okay, and postponed certain death.", "You might not die in traffic! But keep practicing."
-        - >=30: "You need more practice." "There is hope for you.", "You are improving!", "Keep at it!"
-        - >=10: "Sign up for organ donation!", "I'm thinking of reporting you to the police.", "You need much more patience!", "2.6% of deaths occur in traffic accidents. You might be one of them!"
-        - >=5: "This is ridiculous.", "You won't last long on the streets.", "Are you a kid? You're not allowed to drive!"
-        - >=0: "Tap to try again!"
+        - `>=100`: "You are a traffic god!", "This humble game bows before you.", "You have achieved mastery.", "You have learnt everything this game can teach you."
+        - `>=50`: "Well played!", "You had a good run. Can you do it again?", "You played okay, and postponed certain death.", "You might not die in traffic! But keep practicing."
+        - `>=30`: "You need more practice." "There is hope for you.", "You are improving!", "Keep at it!"
+        - `>=10`: "Sign up for organ donation!", "I'm thinking of reporting you to the police.", "You need much more patience!", "2.6% of deaths occur in traffic accidents. You might be one of them!"
+        - `>=5`: "This is ridiculous.", "You won't last long on the streets.", "Are you a kid? You're not allowed to drive!"
+        - `>=0`: "Tap to try again!" (don't scare off newbies)
     - animations:
         - vehicles keep going until crashing or cleared
     - visual:
