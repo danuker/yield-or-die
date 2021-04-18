@@ -38,19 +38,27 @@ Contents:
 # Installation
 
 You need Kivy, Buildozer, and JDK 8.
-    - Install OS dependencies first
-    - For Arch Linux these are:
-        - `sudo pacman -Syu sdl2 sdl2_image sdl2_mixer sdl2_ttf`
 
-    - Then Python dependencies; rebuilds Kivy because of audio bug in Pip binary
-        - `pip install -r requirements.txt`
+- Install OS dependencies first
+- For Arch Linux these are:
+    - `sudo pacman -Syu sdl2 sdl2_image sdl2_mixer sdl2_ttf`
 
+- Then Python dependencies; rebuilds Kivy because of audio bug in Pip binary
+    - `pip install -r requirements.txt`
+
+After you install the dependencies, you can run using:
+
+`python main.py`
+
+But the project is more fun on a mobile phone. Read further.
 
 ## You need JDK 8
 
+Android requires JDK.
+
 Since Oracle [changed its license](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)
 for newer versions of `openjdk-8-jdk`,
-I point anyone interested to an alternate implementation of JDK 8, which got me past this error:
+I point anyone interested to an alternate implementation of JDK 8, which got me past an error:
 
 [AdoptOpenJDK](https://adoptopenjdk.net/installation.html)
 
@@ -75,8 +83,12 @@ To deploy and run on a device:
 If you edit the graphics, you need to generate PNGs from the SVGs,
 because Kivy does not support SVG, and SVG has superior editability.
 
-This is done via `pics/generate_pngs.sh`, and requires commands from the
-`imagemagick` package: `mogrify` and `convert`.
+This requires commands from the `imagemagick` package: `mogrify` and `convert`.
+To perform it:
+
+    cd pics/
+    ./generate_pngs.sh
+    
 
 Because the vast majority of people will not edit the graphics,
 the PNGs are in the Git repo as well (whole project is under 2MB anyway).
