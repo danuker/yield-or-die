@@ -34,6 +34,7 @@ Contents:
 - Installation
 - Feature wishlist
 
+![Screenshot](pics/screenshot.png)
 
 # Installation
 
