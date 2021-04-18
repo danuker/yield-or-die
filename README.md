@@ -124,24 +124,24 @@ Features:
     - share button
 
 - effects
-    animation:
-        before player moves: vehicles go slowly, constantly
-        after player moves: go faster; crash if needed
-    audio (freesound - test with all speakers and headphones):
+    - animation:
+        - before player moves: vehicles go slowly, constantly
+        - after player moves: go faster; crash if needed
+    - audio (freesound - test with all speakers and headphones):
         1. sounds of explosion/crash
         2. engine at various RPM ~ speed, tweak pitch and volume
         3. fireworks
-    text:
-        funny messages:
-        >=100: "You are a traffic god!", "This humble game bows before you.", "You have achieved mastery.", "You have learnt everything this game can teach you."
-        >=50: "Well played!", "You had a good run. Can you do it again?", "You played okay, and postponed certain death.", "You might not die in traffic! But keep practicing."
-        >=30: "You need more practice." "There is hope for you.", "You are improving!", "Keep at it!"
-        >=10: "Sign up for organ donation!", "I'm thinking of reporting you to the police.", "You need much more patience!", "2.6% of deaths occur in traffic accidents. You might be one of them!"
-        >=5: "This is ridiculous.", "You won't last long on the streets.", "Are you a kid? You're not allowed to drive!"
-        >=0: "Tap to try again!"
-    animations:
-        vehicles keep going until crashing or cleared
-    visual:
+    - text:
+        - funny messages:
+        - >=100: "You are a traffic god!", "This humble game bows before you.", "You have achieved mastery.", "You have learnt everything this game can teach you."
+        - >=50: "Well played!", "You had a good run. Can you do it again?", "You played okay, and postponed certain death.", "You might not die in traffic! But keep practicing."
+        - >=30: "You need more practice." "There is hope for you.", "You are improving!", "Keep at it!"
+        - >=10: "Sign up for organ donation!", "I'm thinking of reporting you to the police.", "You need much more patience!", "2.6% of deaths occur in traffic accidents. You might be one of them!"
+        - >=5: "This is ridiculous.", "You won't last long on the streets.", "Are you a kid? You're not allowed to drive!"
+        - >=0: "Tap to try again!"
+    - animations:
+        - vehicles keep going until crashing or cleared
+    - visual:
         1. explosion if crashing
         2. smooth turning instead of 90 degree instantly
         3. fireworks after beating record
