@@ -41,7 +41,7 @@ Contents:
 You need Kivy, Buildozer, and JDK 8.
 
 - Install OS dependencies first
-    - For Arch Linux these are: `sudo pacman -Syu sdl2 sdl2_image sdl2_mixer sdl2_ttf`
+    - For Arch Linux these are: `sudo pacman -Syu android-tools sdl2 sdl2_image sdl2_mixer sdl2_ttf`
 
 - Then Python dependencies; rebuilds Kivy because of audio bug in Pip binary
     - `pip install -r requirements.txt`
@@ -67,7 +67,8 @@ I point anyone interested to an alternate implementation of JDK 8, which got me 
 
 To deploy on Android, you need `adb` and other tools in the Android SDK.
 
-When opening a new console, before doing any Buildozer commands, you need AdoptOpenJDK in the path:
+When opening a new console, before doing any Buildozer commands, you need AdoptOpenJDK in the path.
+If you got the `jdk8u242-b08` directory:
 
     export PATH=$PWD/jdk8u242-b08/bin:$PATH
 
@@ -75,11 +76,25 @@ After changing `buildozer.spec`, you might need to run:
 
     buildozer appclean
 
-Finally, to deploy and run on a device:
+To show devices:
 
-    adb devices     # check that device is visible
+    adb devices
+
+Check that the device is visible (search for the error if you do not see similar output):
+
+    List of devices attached
+    6b7fa94 device
+
+Finally, deploy to the device:
+
     buildozer android debug deploy run
 
+This will take a while the first time; Buildozer has a lot of dependencies,
+including the Android SDK for which there are two (??) license agreements.
+
+On my 6-year-old laptop it took 40 minutes.
+
+Compilation will use CPU; make sure you have adequate cooling and/or thermal throttling. 
 
 ## Regenerating images
 
@@ -94,7 +109,7 @@ To perform it:
     
 
 Because the vast majority of people will not edit the graphics,
-the PNGs are in the Git repo as well (whole project is under 2MB anyway).
+the PNGs are in the Git repo as well (whole project is under 3MB anyway).
 
 
 # Feature wishlist

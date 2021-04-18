@@ -2,5 +2,8 @@
 # https://stackoverflow.com/questions/60096291/how-can-i-get-kivy-to-use-sdl2-on-linux
 kivy --no-binary kivy
 
+# Needed for python-for-android from Kivy
+cython
+
 # Buildozer, needed for deploying on Android
 buildozer
