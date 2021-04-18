@@ -31,8 +31,8 @@ I appreciate contributions, especially for inclusion in [F-Droid](https://f-droi
 
 Contents:
 
-- Installation
-- Feature wishlist
+- [Installation](#installation)
+- [Feature wishlist](#feature-wishlist)
 
 ![Screenshot](pics/screenshot.png)
 
