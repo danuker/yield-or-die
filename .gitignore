@@ -1,0 +1,6 @@
+.buildozer/
+jdk8u242-b08/
+bin/
+*.pyc
+yield-or-die-demo.mp4
+.idea/

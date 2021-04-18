@@ -1,0 +1,19 @@
+Crash:
+
+CC0 https://freesound.org/people/squareal/sounds/237375/
+CC0 https://freesound.org/people/Eponn/sounds/420356/
+CC0 https://freesound.org/people/musicmasta1/sounds/131385/
+CC0 https://freesound.org/people/FxKid2/sounds/367624/
+
+Drive:
+CC0 https://freesound.org/people/RutgerMuller/sounds/50910/
+CC0 https://freesound.org/people/Dignicraft/sounds/372083/
+
+Stop:
+Could not find a CC0 brake/stopping sound yet (must not be too noisy).
+We don't have attribution functionality in the app UI, so I only accept CC0.
+
+Honk:
+CC0 https://freesound.org/people/MicktheMicGuy/sounds/434878/
+CC0 https://freesound.org/people/qubodup/sounds/185479/
+CC0 https://freesound.org/people/bigmanjoe/sounds/349922/

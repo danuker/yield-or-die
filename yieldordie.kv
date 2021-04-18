@@ -1,0 +1,26 @@
+#:kivy 1.0.9
+
+# <> is a Widget rule - applied to any instance of the named class
+# (here is Intersection)
+
+<YieldOrDieGame>:
+    canvas.before:
+        # Background:
+        Color:
+            rgb: .5, .5, .5
+
+        Rectangle:
+            size:self.width, self.height
+
+<Car>:
+    size: app.lane_width, app.lane_width
+
+    canvas.before:
+        PushMatrix
+        Rotate:
+            angle: root.angle
+            axis: (0, 0, 1)
+            origin: root.center
+
+    canvas.after:
+        PopMatrix

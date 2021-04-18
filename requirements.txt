@@ -1,0 +1,6 @@
+# Build kivy to make it work with sdl2:
+# https://stackoverflow.com/questions/60096291/how-can-i-get-kivy-to-use-sdl2-on-linux
+kivy --no-binary kivy
+
+# Buildozer, needed for deploying on Android
+buildozer
