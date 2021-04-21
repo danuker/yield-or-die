@@ -114,14 +114,14 @@ the PNGs are in the Git repo as well (whole project is under 3MB anyway).
 
 # Feature wishlist
 
-Report statistics:
+Report statistics wishlist:
 
 - all time intersections, and won %
 - last 100 intersections won %
 - last 1000 won% ?
 - Top score: consecutive correct
 
-Features:
+Feature wishlist:
 
 - DO NOT timeout if no move made
     - too short timeout encourages risky behaviour
