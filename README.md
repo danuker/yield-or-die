@@ -24,8 +24,7 @@ That said, the author personally used this software to efficiently practice,
 and is now the proud owner of a driver's license (4th time was the charm).
 
 The rules were written for Romania, but they are probably very similar 
-for many jurisdictions. At least the signs used (Give Way and Priority Road)
-are from the [Vienna Convention](https://en.wikipedia.org/wiki/Vienna_Convention_on_Road_Signs_and_Signals#Road_signs).
+for many jurisdictions. Romania has ratified the [Vienna Convention on Road Signs and Signals](https://en.wikipedia.org/wiki/Vienna_Convention_on_Road_Signs_and_Signals).
 
 I would greatly appreciate confirmation from various countries!
 
