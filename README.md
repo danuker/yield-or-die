@@ -24,7 +24,18 @@ That said, the author personally used this software to efficiently practice,
 and is now the proud owner of a driver's license (4th time was the charm).
 
 The rules were written for Romania, but they are probably very similar 
-for most of continental Europe.
+for many jurisdictions. I would greatly appreciate confirmation from various countries!
+
+The implemented rules are:
+
+1. If there are no other cars that would intersect your path, you must go through.
+2. If you are the only one with a right-of-way/priority sign, you must go through first.
+3. If the other cars have a yield sign and you don't, then you must also go through first.
+4. If everyone has the same level of right-of-way, then you must yield to the vehicle coming from your right, if there is one.
+  - There are two kinds of "coming from your right":
+    - before you enter the intersection, the car is on the road to your right
+    - after you enter the intersection, you would turn left (and a car is coming from the road ahead or from the right). This way, if you were to go left, the other car coming from ahead (North) would hit your right.
+5. If you are opposite of someone and both of you want to turn left, in this game you must yield. In practice though, you might be able to go through if both of you keep left of the intersection's center. But I didn't want to code this in the game, and I wouldn't do it in reality either.
 
 I appreciate contributions, especially for inclusion in [F-Droid](https://f-droid.org/).
 
