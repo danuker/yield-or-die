@@ -128,4 +128,4 @@ the PNGs are in the Git repo as well (whole project is under 3MB anyway).
 
 # Feature wishlist
 
-See ticket #1.
+See [ticket #1](https://github.com/danuker/yield-or-die/issues/1).
