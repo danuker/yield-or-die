@@ -116,7 +116,6 @@ class Intersection:
         else:
             self.label.color = [1, .3, .3, 1]
             self.label.text = f'You lost!\n{self.player.reason}\nScore: {self.game.score}'
-            self.game.score = 0
 
         self.correct = correct
 

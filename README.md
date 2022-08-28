@@ -36,12 +36,12 @@ Contents:
 
 ![Screenshot](pics/screenshot.png)
 
-# Installation
+# Development
 
-You need Kivy, Buildozer, and JDK 8.
+You need Kivy, Buildozer, and JDK.
 
 - Install OS dependencies first
-    - For Arch Linux these are: `sudo pacman -Syu android-tools sdl2 sdl2_image sdl2_mixer sdl2_ttf`
+    - For Arch Linux these are: `sudo pacman -Sy android-tools sdl2 sdl2_image sdl2_mixer sdl2_ttf`
 
 - Then Python dependencies; rebuilds Kivy because of audio bug in Pip binary
     - `pip install -r requirements.txt`
@@ -50,29 +50,23 @@ After you install the dependencies, you can run using:
 
 `python main.py`
 
-But the project is more fun on a mobile phone. Read further.
+But the project is more fun on (and designed for) a mobile phone. Read further.
 
-## You need JDK 8
+# Android
 
-Android requires JDK.
+## You need JDK
 
-Since Oracle [changed its license](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)
-for newer versions of `openjdk-8-jdk`,
-I point anyone interested to an alternate implementation of JDK 8, which got me past an error:
+Android requires JDK and Gradle.
 
-[AdoptOpenJDK](https://adoptopenjdk.net/installation.html)
+On Arch Linux, you can try:
+    sudo pacman -Sy jdk-openjdk gradle
 
 
 ## Deploy on Android
 
 To deploy on Android, you need `adb` and other tools in the Android SDK.
 
-When opening a new console, before doing any Buildozer commands, you need AdoptOpenJDK in the path.
-If you got the `jdk8u242-b08` directory:
-
-    export PATH=$PWD/jdk8u242-b08/bin:$PATH
-
-After changing `buildozer.spec`, you might need to run:
+After changing `buildozer.spec` or your Java installation, you probably need to run:
 
     buildozer appclean
 
@@ -92,14 +86,16 @@ Finally, deploy to the device:
 This will take a while the first time; Buildozer has a lot of dependencies,
 including the Android SDK for which there are two (??) license agreements.
 
-On my 6-year-old laptop it took 40 minutes.
+On my 6-year-old laptop it took 30 minutes.
 
-Compilation will use CPU; make sure you have adequate cooling and/or thermal throttling. 
+Compilation will use CPU; make sure you have adequate cooling and/or thermal throttling.
+
+A built APK file will be available in `yield-or-die/.buildozer/android/platform/build-armeabi-v7a/dists/yield_or_die/build/outputs/apk/debug/`.
 
 ## Regenerating images
 
 If you edit the graphics, you need to generate PNGs from the SVGs,
-because Kivy does not support SVG, and SVG has superior editability.
+because Kivy does not support SVG, but SVG has superior editability for the style.
 
 This requires commands from the `imagemagick` package: `mogrify` and `convert`.
 To perform it:
@@ -111,6 +107,7 @@ To perform it:
 Because the vast majority of people will not edit the graphics,
 the PNGs are in the Git repo as well (whole project is under 3MB anyway).
 
+Alternatively you can edit the PNGs directly.
 
 # Feature wishlist
 
