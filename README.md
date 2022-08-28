@@ -24,7 +24,20 @@ That said, the author personally used this software to efficiently practice,
 and is now the proud owner of a driver's license (4th time was the charm).
 
 The rules were written for Romania, but they are probably very similar 
-for most of continental Europe.
+for many jurisdictions. Romania has ratified the [Vienna Convention on Road Signs and Signals](https://en.wikipedia.org/wiki/Vienna_Convention_on_Road_Signs_and_Signals).
+
+I would greatly appreciate confirmation from various countries!
+
+The implemented rules are:
+
+1. If there are no other cars that would intersect your path, you must go through.
+2. If you are the only one with a right-of-way/priority sign, you must go through first.
+3. If the other cars have a yield sign and you don't, then you must also go through first.
+4. If everyone has the same level of right-of-way, then you must yield to the vehicle coming from your right, if there is one.
+  - There are two kinds of "coming from your right":
+    - before you enter the intersection, the car is on the road to your right
+    - after you enter the intersection, you would turn left (and a car is coming from the road ahead or from the right). This way, if you were to go left, the other car coming from ahead (North) would hit your right.
+5. If you are opposite of someone and both of you want to turn left, in this game you must yield. In practice though, you might be able to go through if both of you keep left of the intersection's center. But I didn't want to code this in the game, and I wouldn't do it in reality either.
 
 I appreciate contributions, especially for inclusion in [F-Droid](https://f-droid.org/).
 
@@ -111,62 +124,4 @@ Alternatively you can edit the PNGs directly.
 
 # Feature wishlist
 
-Report statistics:
-
-- all time intersections, and won %
-- last 100 intersections won %
-- last 1000 won% ?
-- Top score: consecutive correct
-
-Features:
-
-- DO NOT timeout if no move made
-    - too short timeout encourages risky behaviour
-    - I failed my 3rd exam because of this
-    - still, the cars should animate somehow as approaching the intersection
-        - perhaps slow to a halt?
-- persistent side of road config option
-    - needs menu?
-- persistent high score record, also display it at end (compared to current score)
-    - allow input of player name
-- don't freeze cars if player only tapped screen, only show hint
-- country localized signs; check regional rules
-
-- losing screen: score, high score
-    - store score to HDD
-    - fireworks if beaten or matched high score
-    - explain mistake ("had RoW but did not go in 20s" or "other car had RoW")
-    - share button
-
-- effects
-    - animation:
-        - before player moves: vehicles go slowly, constantly
-        - after player moves: go faster; crash if needed
-    - audio (freesound - test with all speakers and headphones):
-        1. sounds of explosion/crash
-        2. engine at various RPM ~ speed, tweak pitch and volume
-        3. fireworks
-    - text:
-        - funny messages:
-        - `>=100`: "You are a traffic god!", "This humble game bows before you.", "You have achieved mastery.", "You have learnt everything this game can teach you."
-        - `>=50`: "Well played!", "You had a good run. Can you do it again?", "You played okay, and postponed certain death.", "You might not die in traffic! But keep practicing."
-        - `>=30`: "You need more practice." "There is hope for you.", "You are improving!", "Keep at it!"
-        - `>=10`: "Sign up for organ donation!", "I'm thinking of reporting you to the police.", "You need much more patience!", "2.6% of deaths occur in traffic accidents. You might be one of them!"
-        - `>=5`: "This is ridiculous.", "You won't last long on the streets.", "Are you a kid? You're not allowed to drive!"
-        - `>=0`: "Tap to try again!" (don't scare off newbies)
-    - animations:
-        - vehicles keep going until crashing or cleared
-    - visual:
-        1. explosion if crashing
-        2. smooth turning instead of 90 degree instantly
-        3. fireworks after beating record
-        4. player's car different
-        5. better car, road gfx (pixel art?)
-        6. crumpled & darkened cars after crash
-
-- other vehs moving along their path, so that they intersect at same time
-    - they also accelerate if you accelerate
-    - but stop when they must yield, and you win the turn
-
-- landscape mode? min of width and height -> lane_width
-
+See [ticket #1](https://github.com/danuker/yield-or-die/issues/1).
